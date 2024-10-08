@@ -33,48 +33,43 @@ nmap 10.0.2.15
 - *PORT     STATE  SERVICE
 - *22/tcp   open   ssh
 - **Analysis: The scan identified that port 22 (SSH) was open, indicating the SSH service was running.
-2. Network Range Scan
-Next, I scanned the entire virtual network range 10.0.2.1-254 to detect other active devices and services within the network.
-Command:
-bash
-Copy code
-Nmap 10.0.2.1-254
-Output:
-kotlin
-Copy code
-Nmap scan report for 10.0.2.1 (Host is up)
-Nmap scan report for 10.0.2.3 (Host is up)
-Nmap scan report for 10.0.2.15 (Host is up)
-PORT     STATE  SERVICE
-22/tcp   open   ssh
-Analysis: Multiple devices were identified in the virtual network, including the local machine, but no additional services were detected on other devices.
-3. SYN Scan (Stealth Scan)
-I conducted a SYN (stealth) scan to identify open ports more stealthily.
-Command:
-bash
-Copy code
-nmap -sS 10.0.2.15
-Output:
-kotlin
-Copy code
-Nmap scan report for 10.0.2.15
-The host is up (0.00047s latency).
-PORT     STATE  SERVICE
-22/tcp   open   ssh
-Analysis: The SYN scan confirmed that port 22 (SSH) was the only open port, similar to the basic scan results.
-4. Service and Version Detection
-I performed a service and version detection scan to obtain detailed information on running services.
-Command:
-bash
-Copy code
-nmap -sV 10.0.2.15
-Output:
-swift
-Copy code
-PORT     STATE  SERVICE      VERSION
-22/tcp   open   ssh          OpenSSH 8.2p1 Debian 4 (protocol 2.0)
-Analysis: The scan revealed that the SSH service on port 22 was running OpenSSH 8.2p1, which is important for identifying potential vulnerabilities.
-5. Conclusion
-This project allowed me to explore different Nmap scanning techniques and better understand network reconnaissance. From basic scans to SYN scans and service/version detection, I successfully identified the running services in a virtual environment, an essential skill in network security and vulnerability discovery.
+- **2. Network Range Scan
+- *Next, I scanned the entire virtual network range 10.0.2.1-254 to detect other active devices and services within the network.
+- *Command:
+- *Nmap 10.0.2.1-254
+- *Output:
+- *kotlin
+
+- *Nmap scan report for 10.0.2.1 (Host is up)
+- *Nmap scan report for 10.0.2.3 (Host is up)
+- *Nmap scan report for 10.0.2.15 (Host is up)
+- *PORT     STATE  SERVICE
+- *22/tcp   open   ssh
+- **Analysis: Multiple devices were identified in the virtual network, including the local machine, but no additional services were detected on other devices.
+- **3. SYN Scan (Stealth Scan)
+- *I conducted a SYN (stealth) scan to identify open ports more stealthily.
+- *Command:
+
+- **nmap -sS 10.0.2.15
+- **Output:
+- *kotlin
+
+- **Nmap scan report for 10.0.2.15
+- *The host is up (0.00047s latency).
+- *PORT     STATE  SERVICE
+- *22/tcp   open   ssh
+- *Analysis: The SYN scan confirmed that port 22 (SSH) was the only open port, similar to the basic scan results.
+- **4. Service and Version Detection
+- *I performed a service and version detection scan to obtain detailed information on running services.
+- **Command:
+
+- *nmap -sV 10.0.2.15
+- *Output:
+
+_ *PORT     STATE  SERVICE      VERSION
+- **22/tcp   open   ssh          OpenSSH 8.2p1 Debian 4 (protocol 2.0)
+- **Analysis: The scan revealed that the SSH service on port 22 was running OpenSSH 8.2p1, which is important for identifying potential vulnerabilities.
+- **5. Conclusion
+- **This project allowed me to explore different Nmap scanning techniques and better understand network reconnaissance. From basic scans to SYN scans and service/version detection, I successfully identified the running services in a virtual environment, an essential skill in network security and vulnerability discovery.
 
 ![image](https://github.com/user-attachments/assets/76b6aae3-55a4-48c4-aa52-246b8b63307f)
