@@ -2,8 +2,8 @@
 
 This repository contains the Network Scanning and Discovery with Nmap project, where I demonstrated network reconnaissance, host discovery, port scanning, and service enumeration techniques using Nmap in a virtual environment. The project includes detailed instructions, scan commands, and screenshots of my process, providing insight into practical network scanning.
 Table of Contents
-- **Introduction
-•	Tools Used
+# Introduction
+## Tools Used
 •	Environment Setup
 •	Project Overview
 o	1. Basic Scan
@@ -11,9 +11,9 @@ o	2. Network Range Scan
 o	3. SYN Scan (Stealth Scan)
 o	4. Service and Version Detection
 o	5. Conclusion
-- **Introduction
+# Introduction
 - **In this project, I performed network scanning and discovery using Nmap on a virtual network environment set up in VirtualBox. The goal was to identify the network's open ports, services, and active devices. The project focuses on practical network reconnaissance techniques used in vulnerability discovery.
-- **Tools Used
+## Tools Used
 - **Nmap: Tool for network scanning and service enumeration.
 •	VirtualBox: Virtual environment for network testing.
 •	Kali Linux: Used as the scanning machine.
