@@ -12,30 +12,27 @@ o	3. SYN Scan (Stealth Scan)
 o	4. Service and Version Detection
 o	5. Conclusion
 - **Introduction
-In this project, I performed network scanning and discovery using Nmap on a virtual network environment set up in VirtualBox. The goal was to identify the network's open ports, services, and active devices. The project focuses on practical network reconnaissance techniques used in vulnerability discovery.
-Tools Used
+- **In this project, I performed network scanning and discovery using Nmap on a virtual network environment set up in VirtualBox. The goal was to identify the network's open ports, services, and active devices. The project focuses on practical network reconnaissance techniques used in vulnerability discovery.
+- **Tools Used
 - **Nmap: Tool for network scanning and service enumeration.
 •	VirtualBox: Virtual environment for network testing.
 •	Kali Linux: Used as the scanning machine.
 - **Environment Setup
-I set up a virtual environment using VirtualBox with Kali Linux as the primary scanning machine. The Kali Linux machine was configured in NAT mode, with the IP address 10.0.2.15 assigned.
-Project Overview
-1. Basic Scan
-I performed a basic scan on the local machine (IP: 10.0.2.15) to identify open ports and services.
+- **I set up a virtual environment using VirtualBox with Kali Linux as the primary scanning machine. The Kali Linux machine was configured in NAT mode, with the IP address 10.0.2.15 assigned.
+- **Project Overview
+- **1. Basic Scan
+- *I performed a basic scan on the local machine (IP: 10.0.2.15) to identify open ports and services.
 Command:
-bash
-Copy code
 nmap 10.0.2.15
-Output:
-kotlin
-Copy code
-Starting Nmap 7.94 ( https://nmap.org ) at 2024-10-02
-Nmap scan report for 10.0.2.15
-The host is up (0.00056s latency).
-Not shown: 999 closed ports
-PORT     STATE  SERVICE
-22/tcp   open   ssh
-Analysis: The scan identified that port 22 (SSH) was open, indicating the SSH service was running.
+- **Output:
+-kotlin
+-Starting Nmap 7.94 ( https://nmap.org ) at 2024-10-02
+-Nmap scan report for 10.0.2.15
+-The host is up (0.00056s latency).
+-Not shown: 999 closed ports
+-PORT     STATE  SERVICE
+-22/tcp   open   ssh
+- **Analysis: The scan identified that port 22 (SSH) was open, indicating the SSH service was running.
 2. Network Range Scan
 Next, I scanned the entire virtual network range 10.0.2.1-254 to detect other active devices and services within the network.
 Command:
