@@ -70,6 +70,6 @@ _ *PORT     STATE  SERVICE      VERSION
 - **22/tcp   open   ssh          OpenSSH 8.2p1 Debian 4 (protocol 2.0)
 # Analysis: The scan revealed that the SSH service on port 22 was running OpenSSH 8.2p1, which is important for identifying potential vulnerabilities.
 ## 5. Conclusion
-# This project allowed me to explore different Nmap scanning techniques and better understand network reconnaissance. From basic scans to SYN scans and service/version detection, I successfully identified the running services in a virtual environment, an essential skill in network security and vulnerability discovery.
+- *This project allowed me to explore different Nmap scanning techniques and better understand network reconnaissance. From basic scans to SYN scans and service/version detection, I successfully identified the running services in a virtual environment, an essential skill in network security and vulnerability discovery.
 
 ![image](https://github.com/user-attachments/assets/76b6aae3-55a4-48c4-aa52-246b8b63307f)
