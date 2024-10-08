@@ -21,7 +21,7 @@ o	5. Conclusion
 - **I set up a virtual environment using VirtualBox with Kali Linux as the primary scanning machine. The Kali Linux machine was configured in NAT mode, with the IP address 10.0.2.15 assigned.
 - **Project Overview
 - **1. Basic Scan
-- *I performed a basic scan on the local machine (IP: 10.0.2.15) to identify open ports and services.
+# I performed a basic scan on the local machine (IP: 10.0.2.15) to identify open ports and services.
 Command:
 nmap 10.0.2.15
 - **Output:
@@ -32,7 +32,7 @@ nmap 10.0.2.15
 - *Not shown: 999 closed ports
 - *PORT     STATE  SERVICE
 - *22/tcp   open   ssh
-- **Analysis: The scan identified that port 22 (SSH) was open, indicating the SSH service was running.
+# Analysis: The scan identified that port 22 (SSH) was open, indicating the SSH service was running.
 - **2. Network Range Scan
 - *Next, I scanned the entire virtual network range 10.0.2.1-254 to detect other active devices and services within the network.
 - *Command:
@@ -45,9 +45,9 @@ nmap 10.0.2.15
 - *Nmap scan report for 10.0.2.15 (Host is up)
 - *PORT     STATE  SERVICE
 - *22/tcp   open   ssh
-- **Analysis: Multiple devices were identified in the virtual network, including the local machine, but no additional services were detected on other devices.
+## Analysis: Multiple devices were identified in the virtual network, including the local machine, but no additional services were detected on other devices.
 - **3. SYN Scan (Stealth Scan)
-- *I conducted a SYN (stealth) scan to identify open ports more stealthily.
+# I conducted a SYN (stealth) scan to identify open ports more stealthily.
 - *Command:
 
 - **nmap -sS 10.0.2.15
@@ -68,8 +68,8 @@ nmap 10.0.2.15
 
 _ *PORT     STATE  SERVICE      VERSION
 - **22/tcp   open   ssh          OpenSSH 8.2p1 Debian 4 (protocol 2.0)
-- **Analysis: The scan revealed that the SSH service on port 22 was running OpenSSH 8.2p1, which is important for identifying potential vulnerabilities.
-- **5. Conclusion
-- **This project allowed me to explore different Nmap scanning techniques and better understand network reconnaissance. From basic scans to SYN scans and service/version detection, I successfully identified the running services in a virtual environment, an essential skill in network security and vulnerability discovery.
+# Analysis: The scan revealed that the SSH service on port 22 was running OpenSSH 8.2p1, which is important for identifying potential vulnerabilities.
+## 5. Conclusion
+# This project allowed me to explore different Nmap scanning techniques and better understand network reconnaissance. From basic scans to SYN scans and service/version detection, I successfully identified the running services in a virtual environment, an essential skill in network security and vulnerability discovery.
 
 ![image](https://github.com/user-attachments/assets/76b6aae3-55a4-48c4-aa52-246b8b63307f)
