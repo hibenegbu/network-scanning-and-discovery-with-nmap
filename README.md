@@ -25,13 +25,13 @@ o	5. Conclusion
 Command:
 nmap 10.0.2.15
 - **Output:
--kotlin
--Starting Nmap 7.94 ( https://nmap.org ) at 2024-10-02
--Nmap scan report for 10.0.2.15
--The host is up (0.00056s latency).
--Not shown: 999 closed ports
--PORT     STATE  SERVICE
--22/tcp   open   ssh
+- *kotlin
+- *Starting Nmap 7.94 ( https://nmap.org ) at 2024-10-02
+- *Nmap scan report for 10.0.2.15
+- *The host is up (0.00056s latency).
+- *Not shown: 999 closed ports
+- *PORT     STATE  SERVICE
+- *22/tcp   open   ssh
 - **Analysis: The scan identified that port 22 (SSH) was open, indicating the SSH service was running.
 2. Network Range Scan
 Next, I scanned the entire virtual network range 10.0.2.1-254 to detect other active devices and services within the network.
